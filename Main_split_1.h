@@ -26,6 +26,7 @@ class ColorPair {
                 return colorPairStr;
             }
     };
+}
 
     ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
@@ -38,4 +39,3 @@ class ColorPair {
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
-}
