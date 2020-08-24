@@ -38,3 +38,4 @@ namespace TelCoColorCoder
                 return colorPairStr;
             }
     };
+}
