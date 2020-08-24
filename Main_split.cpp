@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Main.h"
+#include "Main.cpp"
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
