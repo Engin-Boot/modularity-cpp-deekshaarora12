@@ -1,5 +1,7 @@
 #include <iostream>
-#include "Main.cpp"
+#include <Main.h>
+
+class functions{
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -21,13 +23,15 @@ void testPairToNumber(
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
+}
 
 int main() {
-    testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
-    testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
+    functions f;
+    f.testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
+    f.testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
-    testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
-    testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
+    f.testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
+    f.testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
     return 0;
 }
