@@ -3,6 +3,8 @@
 #include "Main.h"
 using namespace TelCoColorCoder;
 
+namespace TelCoColorCoder
+{
 class ColorPair {
         private:
             MajorColor majorColor;
@@ -36,3 +38,4 @@ class ColorPair {
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+}
