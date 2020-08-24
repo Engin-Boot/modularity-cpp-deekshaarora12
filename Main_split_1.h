@@ -1,5 +1,4 @@
-#include <iostream>
-#include <assert.h>
+
 #include "Main.h"
 using namespace TelCoColorCoder;
 
