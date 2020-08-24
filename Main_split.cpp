@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Main.h"
 
+Using namespace TelCoColorCoder;
+
 class functions{
 
 void testNumberToPair(int pairNumber,
