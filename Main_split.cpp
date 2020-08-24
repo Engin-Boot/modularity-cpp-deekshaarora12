@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Main.h"
 
-Using namespace TelCoColorCoder;
+using namespace TelCoColorCoder;
 
 class functions{
 
