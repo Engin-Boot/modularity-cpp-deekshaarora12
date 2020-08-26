@@ -1,4 +1,3 @@
-
 #include "Namespace_defination.h"
 using namespace TelCoColorCoder;
 
