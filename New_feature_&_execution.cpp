@@ -1,7 +1,7 @@
 #include <iostream>
 #include<assert.h>
 #include<string>
-#include "Main_split_2.h"
+#include "testing_tele_color.h"
 
 using namespace std;
 using namespace TelCoColorCoder;
