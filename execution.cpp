@@ -3,6 +3,9 @@
 #include<string>
 #include "Main_split_2.h"
 
+using namespace std;
+using namespace TelCoColorCoder;
+
 int computePairNumber(int majcol, int mincol) {
     return majcol * TelCoColorCoder::numberOfMinorColors + mincol + 1;
 }
