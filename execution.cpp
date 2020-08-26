@@ -1,5 +1,6 @@
 #include <iostream>
 #include<assert.h>
+#include<string>
 #include "Main_split_2.h"
 
 int computePairNumber(int majcol, int mincol) {
