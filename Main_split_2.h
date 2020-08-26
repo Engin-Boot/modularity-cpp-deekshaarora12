@@ -1,6 +1,6 @@
 #include <iostream>
 #include<assert.h>
-#include "Main_split_2.h"
+#include "Main_split_1.h"
 
 using namespace TelCoColorCoder;
 
