@@ -10,13 +10,13 @@ int computePairNumber(int majcol, int mincol) {
     return majcol * TelCoColorCoder::numberOfMinorColors + mincol + 1;
 }
 
-void getManual() {
+std::string getManualToString() {
 
-    string manual_per_itr = "";
+    string manual = "";
     string final_manual = "";
   
     for (int majorColor_itr = 0; majorColor_itr < TelCoColorCoder::numberOfMajorColors; majorColor_itr++) {
-        manual_per_itr = "";
+        manual = "";
         for (int minorColor_itr = 0; minorColor_itr < TelCoColorCoder::numberOfMinorColors; minorColor_itr++) {
             string majorcolor_name = TelCoColorCoder::MajorColorNames[majorColor_itr];
             string minorcolor_name = TelCoColorCoder::MinorColorNames[minorColor_itr];
@@ -24,13 +24,13 @@ void getManual() {
 
             string pair_number_to_string = std::to_string(pairNumber);
 
-            manual_per_itr = manual_per_itr + pair_number_to_string + " " + majorcolor_name + " " + minorcolor_name + "\n";
+            manual = manual + pair_number_to_string + " " + majorcolor_name + " " + minorcolor_name + "\n";
 
        }
-        final_manual = final_manual + manual_per_itr;
+        final_manual = final_manual + manual;
         
     } 
-    cout << final_manual << endl;
+    return final_manual;
 }
 
 int main() {
@@ -39,7 +39,9 @@ int main() {
 
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-    getManual();
-
+    string print_ref_manual;
+    print_ref_manual= getManualToString();
+    cout << print_ref_manual << endl;
+   
     return 0;
 }
