@@ -12,11 +12,11 @@ int computePairNumber(int majcol, int mincol) {
 
 void getManual() {
 
-    string manual = "";
+    string manual_per_itr = "";
     string final_manual = "";
   
     for (int majorColor_itr = 0; majorColor_itr < TelCoColorCoder::numberOfMajorColors; majorColor_itr++) {
-        manual = "";
+        manual_per_itr = "";
         for (int minorColor_itr = 0; minorColor_itr < TelCoColorCoder::numberOfMinorColors; minorColor_itr++) {
             string majorcolor_name = TelCoColorCoder::MajorColorNames[majorColor_itr];
             string minorcolor_name = TelCoColorCoder::MinorColorNames[minorColor_itr];
@@ -24,10 +24,10 @@ void getManual() {
 
             string pair_number_to_string = std::to_string(pairNumber);
 
-            manual = manual + pair_number_to_string + " " + majorcolor_name + " " + minorcolor_name + "\n";
+            manual_per_itr = manual_per_itr + pair_number_to_string + " " + majorcolor_name + " " + minorcolor_name + "\n";
 
        }
-        final_manual = final_manual + manual;
+        final_manual = final_manual + manual_per_itr;
         
     } 
     cout << final_manual << endl;
