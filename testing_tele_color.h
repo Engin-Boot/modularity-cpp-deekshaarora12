@@ -1,7 +1,7 @@
 #include <iostream>
 #include<assert.h>
 #include<string.h>
-#include "Main_split_1.h"
+#include "ColorPair_class_defination."
 
 using namespace std;
 using namespace TelCoColorCoder;
