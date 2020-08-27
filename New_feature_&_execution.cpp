@@ -10,7 +10,7 @@ int computePairNumber(int majcol, int mincol) {
     return majcol * TelCoColorCoder::numberOfMinorColors + mincol + 1;
 }
 
-std::string getManualToString() {
+void getManualToString() {
 
     string manual_per_itr = "";
     string final_manual = "";
@@ -30,7 +30,7 @@ std::string getManualToString() {
         final_manual = final_manual + manual_per_itr;
         
     } 
-    return final_manual;
+    cout<<final_manual<<endl;
 }
 
 int main() {
@@ -39,9 +39,7 @@ int main() {
 
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-    string print_ref_manual;
-    print_ref_manual= getManualToString();
-    cout << print_ref_manual << endl;
-   
+    getManualToString();
+  
     return 0;
 }
