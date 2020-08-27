@@ -5,10 +5,6 @@
 using namespace std;
 using namespace TelCoColorCoder;
 
-int computePairNumber(int majcol, int mincol) {
-    return majcol * TelCoColorCoder::numberOfMinorColors + mincol + 1;
-}
-
 void getManualToString() {
     string manual_per_itr = "";
     string final_manual = "";
@@ -19,7 +15,7 @@ void getManualToString() {
             string majorcolor_name = TelCoColorCoder::MajorColorNames[majorColor_itr];
             string minorcolor_name = TelCoColorCoder::MinorColorNames[minorColor_itr];
             
-            int pairNumber = computePairNumber(majorColor_itr, minorColor_itr);
+            int pairNumber = majorColor_itr * TelCoColorCoder::numberOfMinorColors + minorColor_itr + 1;
             string pair_number_to_string = std::to_string(pairNumber);
 
             manual_per_itr = manual_per_itr + pair_number_to_string + " " + majorcolor_name + " " + minorcolor_name + "\n";
